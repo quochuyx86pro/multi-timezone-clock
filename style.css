@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Courier New", monospace;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+#clock-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.clock-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.clock-card:hover {
+  transform: scale(1.05);
+}
+
+.city {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00e6ff;
+}
+
+.time {
+  font-size: 2rem;
+  color: #ffcc00;
+}
